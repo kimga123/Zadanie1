@@ -145,6 +145,16 @@ ul li a:hover, a:focus {
   margin-left: auto;
 }
 
+.Content_animalLIST {
+  margin-top: 0 !important;
+  border: 2px solid #DFE1E5;
+  border-radius: 18px;
+}
+
+.Content_animalLIST {
+  text-align: left !important;
+}
+
 .LoginAnchor {
   background: #4d79ff;
   padding: 4px 15px;
@@ -186,3 +196,22 @@ ul li a:hover, a:focus {
   margin-right: 10px;
 }
 
+
+.Content_autocomplete, .Content_animalLIST{
+  display: block;
+  width: 100%;
+}
+
+.Content_animalLIST ul {
+  padding-left: 15px;
+}
+
+.Content_animalLIST ul li {
+  display: block;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.Content_animalLIST ul li:hover {
+  background: #eee;
+}

@@ -7,6 +7,9 @@
     <title>TTAI Kinga Mocarska</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script type="text/javascript" src="animals.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/javascript" src="index.js" async></script>
 </head>
 <body>
   <main>
@@ -36,12 +39,13 @@
           <img src="./logo.png">
         </section>
         <section class="Content_search">
-          <input type="text">
+          <input type="text" v-model="inputContent">
           <div class="Content_search_icons">
             <i class="fas fa-microphone"></i>
             <i class="fas fa-keyboard"></i>
           </div>
         </section>
+        <v-autocompleter v-bind:input="inputContent" v-if="inputContent"></v-autocompleter>
         <section class="Content_buttons">
           <button type="button">
             Szukaj w Google
